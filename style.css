@@ -1,0 +1,160 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+    font-size: 50;
+}
+
+:root {
+    --hue-neutral: 200;
+    --heu-wrong: 0;
+    --heu-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    background-image: url('./ProjectPictures/roadsafety.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /*width : 99vw;
+    height: 50vw;*/
+    justify-content: center;
+    align-items: center;
+    image-orientation: unset;
+    mask-image: inherit;
+}
+
+body.correct {
+    --hue: var(--heu-correct);
+}
+
+body.wrong {
+    --hue: var(--heu-wrong);
+}
+
+.container {
+    /*margin-top: 10vw;*/
+    height: auto;
+    width: 800px;
+    max-width: 80%;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    display: block;
+}
+.logo {
+    /*z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.logo h2 {
+    color: white;
+    text-shadow: black;
+    font-size: 40px;
+    padding: 10px;
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-bottom: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn.hover{
+    border-color: black;
+}
+
+.btn.correct{
+    --hue: var(--heu-correct);
+    color: black;
+    font-size: 20;
+}
+
+.btn.wrong{
+    --hue: var(--heu-wrong);
+    font-size: 20;
+}
+
+.start-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 90px 200px;
+    margin: 130px 30px;
+    color: green;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+/*Added code here to style image*/
+
+#image {
+    width: auto;
+    height: 200px;
+    margin: 30px auto;
+    margin-left: 270px;
+    text-align: center;
+}
+
+.form-div {
+    margin: 50px auto 50px;
+    padding: 25px 15px 10px 15px;
+    border: 1px solid #80ced7;
+    border-radius: 5px;
+    font-size: 1.1en;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+form p {
+    font-size: .89em;
+}
+
+.form-div.login {
+    margin-top: 100px;
+}
+
+.logout {
+    color: red;
+}

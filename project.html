@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script defer src="questions.js"></script>
+    <title>FRSC: Driving Quiz</title>
+</head>
+<body>
+    <div class='logo'>
+        <img src="./ProjectPictures/frsc.jpg"/>
+        <h2> FEDERAL ROAD SAFETY CORPS </h2>
+    </div>
+    <main>
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id='score'></div>
+                <div id="question">Question</div>
+    
+                <!--Adding images-->
+                <img id="image" />
+                <div id="finalScore"></div>
+                
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn">Start</button>
+                <button id="next-btn" class="next-btn hide">Next</button>
+    
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
